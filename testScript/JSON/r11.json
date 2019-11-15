@@ -1,0 +1,40 @@
+{
+  "name": "R11",
+  "filename":"r11",
+  "hostname": "R11",
+  "passwd": "zebra",
+  "router_id": "255.251.23.11",
+  "interfaces": [
+    {
+      "name": "R11-eth0",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R9",
+      "addr": "fde4:2:9b::b/64"
+    },{
+      "name": "R11-eth1",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R10",
+      "addr": "fde4:2:ab::b/64"
+    },{
+      "name": "R11-eth2",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R12",
+      "addr": "fde4:2:bc::b/64"
+    }
+  ]
+}

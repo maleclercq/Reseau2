@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Abort on error // swap with -x to trace execution (debug)
+set -e
+
+# Load global config
+#source "$(cd "$(dirname "$0")"; pwd -P)/../myNetwork"
+ldconfig
+
+# Add the addresses for our public interfaces towards BGP peers
+ip link set dev R5-eth0 up
+ip -6 addr add fde4:2:35::5/64 dev R5-eth0
+
+ip link set dev R5-eth1 up
+ip -6 addr add fde4:2:45::5/64 dev R5-eth1
+
+ip link set dev R5-eth2 up
+ip -6 addr add fde4:2:56::5/64 dev R5-eth2
+
+ip link set dev R5-eth3 up
+ip -6 addr add fde4:2:57::5/64 dev R5-eth3
+
+ip link set dev R5-eth4 up
+ip -6 addr add fde4:2:58::5/64 dev R5-eth4
+
+
+# The BELNET - BXL link, defaults to fd00:255:beb1::be/64
+#ip address add dev BELNET-eth0 "fde4:2:beb1::be/64"
+
+# Assign an IP address (and an associated subnet prefix length)
+# to the fist subnet connected to this router (defaults to fd00:255:be::/48)
+#ip address add dev BELNET-lan0 "fde4:2:be::/48"
+
+# Crude way to adapt the router configuration to the current group number 
+#sed "s/##ASN##/2/" /etc/bird/bird6.conf.templ > /etc/bird/bird6.conf
+
+# zebra is required to make the link between all FRRouting daemons
+# and the linux kernel routing table
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/r5.api -i /tmp/r5_zebra.pid &
+# launching FRRouting OSPF daemon
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/r5_ospf.conf -z /tmp/r5.api -i /tmp/r5_ospf6d.pid -A 127.0.0.1

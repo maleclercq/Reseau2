@@ -1,0 +1,141 @@
+#!/bin/bash
+
+n=11
+i=0
+
+chargement(){
+    ((i++))
+    str="["
+
+    START=1
+    END=$i
+    for (( c=$START; c<=$END; c++ ))
+    do
+        str=$str"#"
+    done
+
+    z=$i+1
+    for (( c=$z; c<=$n; c++ ))
+    do
+        str=$str" "
+    done
+
+    str=$str"]\r"
+
+    echo -ne "$str"
+}
+
+sudo rm result
+cd ..
+
+chargement
+echo "clean up"
+sudo ./cleanup.sh > /dev/null 2>&1 
+chargement
+
+
+echo "create network"
+sudo ./create_network.sh myNetwork > /dev/null 2>&1
+chargement
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R13 << EOF
+ping6 fde4:2:1d::1 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:2d::2 -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+chargement
+echo -ne "#        (12.5%)\r"
+#echo "test 1 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R1 << EOF
+ping6 fde4:2:12::2 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:13::3 -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "##       (25.0%)\r"
+#echo "test 2 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R4 << EOF
+ping6 fde4:2:24::2 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:45::5 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:46::6 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:34::3 -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "###      (37.5%)\r"
+#echo "test 3 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R5 << EOF
+ping6 fde4:2:35::3 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:56::6 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:58::8 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:57::7 -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "####     (50.0%)\r"
+#echo "test 4 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R7 << EOF
+ping6 fde4:2:37::3 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:78::8 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:79::9 -c 5 >> verifEtatTopo/result
+#ping6 fde4:2:7b::b -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "#####    (62.5%)\r"
+#echo "test 5 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R8 << EOF
+ping6 fde4:2:68::6 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:89::9 -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "######   (75.0%)\r"
+#echo "test 6 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R10 << EOF
+ping6 fde4:2:9a::9 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:ab::b -c 5 >> verifEtatTopo/result
+ping6 fde4:2:ac::c -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "#######  (87.5%)\r"
+#echo "test 7 fini"
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R11 << EOF
+ping6 fde4:2:9b::9 -c 5 >> verifEtatTopo/result
+ping6 fde4:2:bc::c -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo -ne "#########(100.0%)\r"
+#echo "test 8 fini"
+
+
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R13 << EOF
+ping6 fde4:2:bc::c -c 5 >> verifEtatTopo/result
+ping6 fde4:2:ac::c -c 5 >> verifEtatTopo/result
+exit
+EOF
+
+echo "test OSPF fini"
+
+
+cd verifEtatTopo
+python readFile.py

@@ -1,0 +1,54 @@
+{
+  "name": "R3",
+  "hostname": "R3",
+  "passwd": "zebra",
+  "router_id": "255.251.23.3",
+  "interfaces": [
+    {
+      "name": "lo",
+      "cost": 5,
+      "hello_time": 10,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R3"
+    },{
+      "name": "R3-eth0",
+      "cost": 5,
+      "hello_time": 10,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R1"
+    },{
+      "name": "R3-eth1",
+      "cost": 5,
+      "hello_time": 10,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R4" 
+    },{
+      "name": "R3-eth2",
+      "cost": 5,
+      "hello_time": 10,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R5"
+    },{
+      "name": "R3-eth3",
+      "cost": 5,
+      "hello_time": 10,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R7"
+    }
+  ]
+}

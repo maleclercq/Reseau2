@@ -1,0 +1,60 @@
+{
+  "name": "R5",
+  "hostname": "R5",
+  "filename": "r5",
+  "passwd": "zebra",
+  "router_id": "255.251.23.5",
+  "interfaces": [
+    {
+      "name": "R5-eth0",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R3",
+      "addr": "fde4:2:35::5/64"
+    },{
+      "name": "R5-eth1",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R4",
+      "addr": "fde4:2:45::5/64"
+    },{
+      "name": "R5-eth2",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R6",
+      "addr": "fde4:2:56::5/64"
+    },{
+      "name": "R5-eth3",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R7",
+      "addr": "fde4:2:57::5/64"
+    },{
+      "name": "R5-eth4",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R8",
+      "addr": "fde4:2:58::5/64"
+    }
+  ]
+}

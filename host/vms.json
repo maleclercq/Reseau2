@@ -1,0 +1,14 @@
+{
+  "global": {
+    "box": "bento/debian-10.1",
+    "ip" : "192.168.42.0",
+    "ip_start": 2,
+    "mask": "255.255.255.0",
+    "promiscuous": true,
+    "nb_groups": 10,
+    "prefix_name": "group",
+    "ssh_fwd_start": 40021,
+    "memory": 2048,
+    "extra_nic": 1
+  }
+}

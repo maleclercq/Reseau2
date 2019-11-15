@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Abort on error // swap with -x to trace execution (debug)
+set -e
+
+# Load global config
+#source "$(cd "$(dirname "$0")"; pwd -P)/../myNetwork"
+ldconfig
+
+# Add loopback address
+ip -6 addr add fde4:2:0:33::3/64 dev lo
+
+# Add the addresses for our public interfaces towards BGP peers
+ip link set dev R3-eth0 up
+ip -6 addr add fde4:2:0:13::3/64 dev R3-eth0
+
+ip link set dev R3-eth1 up
+ip -6 addr add fde4:2:0:34::3/64 dev R3-eth1
+
+ip link set dev R3-eth2 up
+ip -6 addr add fde4:2:0:35::3/64 dev R3-eth2
+
+ip link set dev R3-eth3 up
+ip -6 addr add fde4:2:0:37::3/64 dev R3-eth3
+
+# The BELNET - BXL link, defaults to fd00:255:beb1::be/64
+#ip address add dev BELNET-eth0 "fde4:2:beb1::be/64"
+
+# Assign an IP address (and an associated subnet prefix length)
+# to the fist subnet connected to this router (defaults to fd00:255:be::/48)
+#ip address add dev BELNET-lan0 "fde4:2:be::/48"
+
+# zebra is required to make the link between all FRRouting daemons
+# and the linux kernel routing table
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/r3.api -i /tmp/r3_zebra.pid &
+# launching FRRouting OSPF daemon
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/r3_ospf.conf -z /tmp/r3.api -i /tmp/r3_ospf6d.pid -A 127.0.0.1 &
+# launching bgpd
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/bgpd -f /etc/r3_bgp.conf -z /tmp/r3.api -i /tmp/r3_bgpd.pid -A 127.0.0.1
+

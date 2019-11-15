@@ -1,0 +1,50 @@
+{
+  "name": "R8",
+  "filename": "r8",
+  "hostname": "R8",
+  "passwd": "zebra",
+  "router_id": "255.251.23.8",
+  "interfaces": [
+    {
+      "name": "R8-eth0",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R5",
+      "addr": "fde4:2:58::8/64"
+    },{
+      "name": "R8-eth1",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R6",
+      "addr": "fde4:2:68::8/64" 
+    },{
+      "name": "R8-eth2",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R7",
+      "addr": "fde4:2:78::8/64"
+    },{
+      "name": "R8-eth3",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R9",
+      "addr": "fde4:2:89::8/64"
+    }
+  ]
+}

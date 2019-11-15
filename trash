@@ -1,0 +1,48 @@
+@@ Adding links and nodes
+[INFO] Creating node P1
+[INFO] Executing boot for node P1
+[INFO] Creating node P2
+[INFO] Executing boot for node P2
+net.ipv6.conf.all.forwarding = 1
+net.ipv6.conf.default.forwarding = 1
+net.ipv6.conf.all.forwarding = 1
+net.ipv6.conf.default.forwarding = 1
+[INFO] Connected P1-eth0 to P2-eth0
+[INFO] Creating node P3
+[INFO] Executing boot for node P3
+net.ipv6.conf.all.forwarding = 1
+net.ipv6.conf.default.forwarding = 1
+[INFO] Connected P1-eth1 to P3-eth0
+[INFO] Connected P2-eth1 to P3-eth1
+[INFO] Executing start for node P1
+[INFO] Executing start for node P2
+[INFO] Executing start for node P3
+[INFO] The network has been started!
+2019/10/22 13:58:58 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:58:58 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 19 usec, Reason: R+, L+
+
+2019/10/22 13:58:59 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:58:59 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 41 usec, Reason: R+, L+
+
+2019/10/22 13:58:59 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:58:59 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 75 usec, Reason: L+
+
+2019/10/22 13:58:59 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:58:59 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 64 usec, Reason: L+
+
+2019/10/22 13:58:59 OSPF6: Neighbor state change 255.251.23.6%P3-eth1: [Down]->[Init] (HelloReceived)
+2019/10/22 13:59:00 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:59:00 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 58 usec, Reason: L+, L-
+
+2019/10/22 13:59:00 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:59:00 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 60 usec, Reason: L+, L-
+
+2019/10/22 13:59:08 OSPF6: Neighbor state change 255.251.23.5%P2-eth0: [Down]->[Init] (HelloReceived)
+2019/10/22 13:59:08 OSPF6: Neighbor state change 255.251.23.5%P3-eth0: [Down]->[Init] (HelloReceived)
+2019/10/22 13:59:20 OSPF6: Terminating on signal SIGTERM
+2019/10/22 13:59:20 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:59:20 OSPF6: SPF: Scheduled in 0 msec
+2019/10/22 13:59:20 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 25 usec, Reason: L+, L-
+
+2019/10/22 13:59:20 OSPF6: Terminating on signal SIGTERM
+2019/10/22 13:59:20 OSPF6: SPF: Scheduled in 44 msec

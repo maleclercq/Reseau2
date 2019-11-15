@@ -1,0 +1,50 @@
+{
+  "name": "R9",
+  "filename": "r9",
+  "hostname": "R9",
+  "passwd": "zebra",
+  "router_id": "255.251.23.9",
+  "interfaces": [
+    {
+      "name": "R9-eth0",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R7",
+      "addr": "fde4:2:79::9/64"
+    },{
+      "name": "R9-eth1",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R8",
+      "addr": "fde4:2:89::9/64"
+    },{
+      "name": "R9-eth2",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R10",
+      "addr": "fde4:2:9a::9/64"
+    },{
+      "name": "R9-eth3",
+      "cost": 5,
+      "hello_time": 40,
+      "dead_time": 40,
+      "instance_id": 0,
+      "area": "0.0.0.0",
+      "active": true,
+      "link": "R11",
+      "addr": "fde4:2:9b::9/64"
+    }
+  ]
+}
