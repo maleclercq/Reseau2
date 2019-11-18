@@ -64,8 +64,10 @@ function mk_topo {
 
     #echo "@@ Briding the network"
     bridge_node R6 eth6 eb1
-    bridge_node R9 eth2 kingG9
     bridge_node R1 eth1 ebG1
+    #bridge_node R3 eth3 ebG3
+    bridge_node R6 eth5 ebG6
+    #bridge_node R11 eth4 ebG4
 
     #echo "@@ Adding LANs"
     # Create a new LAN (subnet), attached to R0, with 2 hosts: B1 and B2

@@ -2,7 +2,7 @@
 
 # Abort on error // swap with -x to trace execution (debug)
 set -e
-
+ 
 # Load global config
 #source "$(cd "$(dirname "$0")"; pwd -P)/../myNetwork"
 ldconfig

@@ -23,6 +23,10 @@ chargement(){
 }
 
 
-sudo ./test.sh >> result
+sudo ./testPING.sh >> resultPING
 python readFile.py
 
+sudo ./testTraceRoute.sh >> resultTraceRoute
+
+
+sudo ./testBGP.sh >> resultBGP

@@ -1,7 +1,7 @@
 import re
 
 if __name__ == "__main__":
-    f=open("result", "r")
+    f=open("resultPING", "r")
     contents =f.read()
     #print(contents)
 

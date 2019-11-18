@@ -23,9 +23,6 @@ ip -6 addr add fde4:2:0:9a::9/64 dev R9-eth2
 ip link set dev R9-eth3 up
 ip -6 addr add fde4:2:0:9b::9/64 dev R9-eth3
 
-ip link set dev kingG9 up
-ip -6 addr add fde4::caf2/64 dev kingG9
-
 
 # The BELNET - BXL link, defaults to fd00:255:beb1::be/64
 #ip address add dev BELNET-eth0 "fde4:2:beb1::be/64"

@@ -1,0 +1,418 @@
+try ping: fde4:2:0:dd::d :
+PING fde4:2:0:dd::d(fde4:2:0:dd::d) 56 data bytes
+64 bytes from fde4:2:0:dd::d: icmp_seq=1 ttl=64 time=0.046 ms
+64 bytes from fde4:2:0:dd::d: icmp_seq=2 ttl=64 time=0.132 ms
+64 bytes from fde4:2:0:dd::d: icmp_seq=3 ttl=64 time=0.169 ms
+64 bytes from fde4:2:0:dd::d: icmp_seq=4 ttl=64 time=0.154 ms
+64 bytes from fde4:2:0:dd::d: icmp_seq=5 ttl=64 time=0.157 ms
+
+--- fde4:2:0:dd::d ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4080ms
+rtt min/avg/max/mdev = 0.046/0.131/0.169/0.046 ms
+try ping: fde4:2:0:1d::1 :
+PING fde4:2:0:1d::1(fde4:2:0:1d::1) 56 data bytes
+64 bytes from fde4:2:0:1d::1: icmp_seq=1 ttl=64 time=0.370 ms
+64 bytes from fde4:2:0:1d::1: icmp_seq=2 ttl=64 time=0.232 ms
+64 bytes from fde4:2:0:1d::1: icmp_seq=3 ttl=64 time=0.179 ms
+64 bytes from fde4:2:0:1d::1: icmp_seq=4 ttl=64 time=0.165 ms
+64 bytes from fde4:2:0:1d::1: icmp_seq=5 ttl=64 time=0.141 ms
+
+--- fde4:2:0:1d::1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 0.141/0.217/0.370/0.082 ms
+try ping: fde4:2:0:2d::2 :
+PING fde4:2:0:2d::2(fde4:2:0:2d::2) 56 data bytes
+64 bytes from fde4:2:0:2d::2: icmp_seq=1 ttl=64 time=0.373 ms
+64 bytes from fde4:2:0:2d::2: icmp_seq=2 ttl=64 time=0.147 ms
+64 bytes from fde4:2:0:2d::2: icmp_seq=3 ttl=64 time=0.169 ms
+64 bytes from fde4:2:0:2d::2: icmp_seq=4 ttl=64 time=0.211 ms
+64 bytes from fde4:2:0:2d::2: icmp_seq=5 ttl=64 time=0.180 ms
+
+--- fde4:2:0:2d::2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3996ms
+rtt min/avg/max/mdev = 0.147/0.216/0.373/0.081 ms
+try ping: fde4:2:0:11::1 :
+PING fde4:2:0:11::1(fde4:2:0:11::1) 56 data bytes
+64 bytes from fde4:2:0:11::1: icmp_seq=1 ttl=64 time=0.079 ms
+64 bytes from fde4:2:0:11::1: icmp_seq=2 ttl=64 time=0.229 ms
+64 bytes from fde4:2:0:11::1: icmp_seq=3 ttl=64 time=0.209 ms
+64 bytes from fde4:2:0:11::1: icmp_seq=4 ttl=64 time=0.145 ms
+64 bytes from fde4:2:0:11::1: icmp_seq=5 ttl=64 time=0.164 ms
+
+--- fde4:2:0:11::1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.079/0.165/0.229/0.053 ms
+try ping: fde4:2:0:12::2 :
+PING fde4:2:0:12::2(fde4:2:0:12::2) 56 data bytes
+64 bytes from fde4:2:0:12::2: icmp_seq=1 ttl=64 time=0.337 ms
+64 bytes from fde4:2:0:12::2: icmp_seq=2 ttl=64 time=0.249 ms
+64 bytes from fde4:2:0:12::2: icmp_seq=3 ttl=64 time=0.274 ms
+64 bytes from fde4:2:0:12::2: icmp_seq=4 ttl=64 time=0.136 ms
+64 bytes from fde4:2:0:12::2: icmp_seq=5 ttl=64 time=0.218 ms
+
+--- fde4:2:0:12::2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.136/0.242/0.337/0.069 ms
+try ping: fde4:2:0:13::3 :
+PING fde4:2:0:13::3(fde4:2:0:13::3) 56 data bytes
+64 bytes from fde4:2:0:13::3: icmp_seq=1 ttl=64 time=0.338 ms
+64 bytes from fde4:2:0:13::3: icmp_seq=2 ttl=64 time=0.177 ms
+64 bytes from fde4:2:0:13::3: icmp_seq=3 ttl=64 time=0.179 ms
+64 bytes from fde4:2:0:13::3: icmp_seq=4 ttl=64 time=0.263 ms
+64 bytes from fde4:2:0:13::3: icmp_seq=5 ttl=64 time=0.189 ms
+
+--- fde4:2:0:13::3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3997ms
+rtt min/avg/max/mdev = 0.177/0.229/0.338/0.063 ms
+try ping: fde4:2:0:44::4 :
+PING fde4:2:0:44::4(fde4:2:0:44::4) 56 data bytes
+64 bytes from fde4:2:0:44::4: icmp_seq=1 ttl=64 time=0.084 ms
+64 bytes from fde4:2:0:44::4: icmp_seq=2 ttl=64 time=0.182 ms
+64 bytes from fde4:2:0:44::4: icmp_seq=3 ttl=64 time=0.266 ms
+64 bytes from fde4:2:0:44::4: icmp_seq=4 ttl=64 time=0.142 ms
+64 bytes from fde4:2:0:44::4: icmp_seq=5 ttl=64 time=0.246 ms
+
+--- fde4:2:0:44::4 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3996ms
+rtt min/avg/max/mdev = 0.084/0.184/0.266/0.066 ms
+try ping: fde4:2:0:24::2 :
+PING fde4:2:0:24::2(fde4:2:0:24::2) 56 data bytes
+64 bytes from fde4:2:0:24::2: icmp_seq=1 ttl=64 time=0.526 ms
+64 bytes from fde4:2:0:24::2: icmp_seq=2 ttl=64 time=0.157 ms
+64 bytes from fde4:2:0:24::2: icmp_seq=3 ttl=64 time=0.181 ms
+64 bytes from fde4:2:0:24::2: icmp_seq=4 ttl=64 time=0.210 ms
+64 bytes from fde4:2:0:24::2: icmp_seq=5 ttl=64 time=0.174 ms
+
+--- fde4:2:0:24::2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.157/0.249/0.526/0.140 ms
+try ping: fde4:2:0:45::5 :
+PING fde4:2:0:45::5(fde4:2:0:45::5) 56 data bytes
+64 bytes from fde4:2:0:45::5: icmp_seq=1 ttl=64 time=0.505 ms
+64 bytes from fde4:2:0:45::5: icmp_seq=2 ttl=64 time=0.172 ms
+64 bytes from fde4:2:0:45::5: icmp_seq=3 ttl=64 time=0.196 ms
+64 bytes from fde4:2:0:45::5: icmp_seq=4 ttl=64 time=0.189 ms
+64 bytes from fde4:2:0:45::5: icmp_seq=5 ttl=64 time=0.252 ms
+
+--- fde4:2:0:45::5 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.172/0.262/0.505/0.125 ms
+try ping: fde4:2:0:46::6 :
+PING fde4:2:0:46::6(fde4:2:0:46::6) 56 data bytes
+64 bytes from fde4:2:0:46::6: icmp_seq=1 ttl=64 time=0.561 ms
+64 bytes from fde4:2:0:46::6: icmp_seq=2 ttl=64 time=0.196 ms
+64 bytes from fde4:2:0:46::6: icmp_seq=3 ttl=64 time=0.208 ms
+64 bytes from fde4:2:0:46::6: icmp_seq=4 ttl=64 time=0.169 ms
+64 bytes from fde4:2:0:46::6: icmp_seq=5 ttl=64 time=0.199 ms
+
+--- fde4:2:0:46::6 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.169/0.266/0.561/0.148 ms
+try ping: fde4:2:0:34::3 :
+PING fde4:2:0:34::3(fde4:2:0:34::3) 56 data bytes
+64 bytes from fde4:2:0:34::3: icmp_seq=1 ttl=64 time=0.453 ms
+64 bytes from fde4:2:0:34::3: icmp_seq=2 ttl=64 time=0.187 ms
+64 bytes from fde4:2:0:34::3: icmp_seq=3 ttl=64 time=0.140 ms
+64 bytes from fde4:2:0:34::3: icmp_seq=4 ttl=64 time=0.157 ms
+64 bytes from fde4:2:0:34::3: icmp_seq=5 ttl=64 time=0.210 ms
+
+--- fde4:2:0:34::3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.140/0.229/0.453/0.115 ms
+try ping: fde4:2:0:55::5 :
+PING fde4:2:0:55::5(fde4:2:0:55::5) 56 data bytes
+64 bytes from fde4:2:0:55::5: icmp_seq=1 ttl=64 time=0.057 ms
+64 bytes from fde4:2:0:55::5: icmp_seq=2 ttl=64 time=0.160 ms
+64 bytes from fde4:2:0:55::5: icmp_seq=3 ttl=64 time=0.155 ms
+64 bytes from fde4:2:0:55::5: icmp_seq=4 ttl=64 time=0.155 ms
+64 bytes from fde4:2:0:55::5: icmp_seq=5 ttl=64 time=0.155 ms
+
+--- fde4:2:0:55::5 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.057/0.136/0.160/0.041 ms
+try ping: fde4:2:0:35::3 :
+PING fde4:2:0:35::3(fde4:2:0:35::3) 56 data bytes
+64 bytes from fde4:2:0:35::3: icmp_seq=1 ttl=64 time=0.540 ms
+64 bytes from fde4:2:0:35::3: icmp_seq=2 ttl=64 time=0.188 ms
+64 bytes from fde4:2:0:35::3: icmp_seq=3 ttl=64 time=0.175 ms
+64 bytes from fde4:2:0:35::3: icmp_seq=4 ttl=64 time=0.218 ms
+64 bytes from fde4:2:0:35::3: icmp_seq=5 ttl=64 time=0.166 ms
+
+--- fde4:2:0:35::3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.166/0.257/0.540/0.143 ms
+try ping: fde4:2:0:56::6 :
+PING fde4:2:0:56::6(fde4:2:0:56::6) 56 data bytes
+64 bytes from fde4:2:0:56::6: icmp_seq=1 ttl=64 time=0.359 ms
+64 bytes from fde4:2:0:56::6: icmp_seq=2 ttl=64 time=0.194 ms
+64 bytes from fde4:2:0:56::6: icmp_seq=3 ttl=64 time=0.205 ms
+64 bytes from fde4:2:0:56::6: icmp_seq=4 ttl=64 time=0.279 ms
+64 bytes from fde4:2:0:56::6: icmp_seq=5 ttl=64 time=2.55 ms
+
+--- fde4:2:0:56::6 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4152ms
+rtt min/avg/max/mdev = 0.194/0.717/2.550/0.918 ms
+try ping: fde4:2:0:58::8 :
+PING fde4:2:0:58::8(fde4:2:0:58::8) 56 data bytes
+64 bytes from fde4:2:0:58::8: icmp_seq=1 ttl=64 time=0.394 ms
+64 bytes from fde4:2:0:58::8: icmp_seq=2 ttl=64 time=0.162 ms
+64 bytes from fde4:2:0:58::8: icmp_seq=3 ttl=64 time=0.305 ms
+64 bytes from fde4:2:0:58::8: icmp_seq=4 ttl=64 time=0.255 ms
+64 bytes from fde4:2:0:58::8: icmp_seq=5 ttl=64 time=0.329 ms
+
+--- fde4:2:0:58::8 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.162/0.289/0.394/0.077 ms
+try ping: fde4:2:0:57::7 :
+PING fde4:2:0:57::7(fde4:2:0:57::7) 56 data bytes
+64 bytes from fde4:2:0:57::7: icmp_seq=1 ttl=64 time=0.439 ms
+64 bytes from fde4:2:0:57::7: icmp_seq=2 ttl=64 time=0.150 ms
+64 bytes from fde4:2:0:57::7: icmp_seq=3 ttl=64 time=0.263 ms
+64 bytes from fde4:2:0:57::7: icmp_seq=4 ttl=64 time=0.204 ms
+64 bytes from fde4:2:0:57::7: icmp_seq=5 ttl=64 time=0.187 ms
+
+--- fde4:2:0:57::7 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4232ms
+rtt min/avg/max/mdev = 0.150/0.248/0.439/0.103 ms
+try ping: fde4:2:0:77::7 :
+PING fde4:2:0:77::7(fde4:2:0:77::7) 56 data bytes
+64 bytes from fde4:2:0:77::7: icmp_seq=1 ttl=64 time=0.068 ms
+64 bytes from fde4:2:0:77::7: icmp_seq=2 ttl=64 time=0.142 ms
+64 bytes from fde4:2:0:77::7: icmp_seq=3 ttl=64 time=0.134 ms
+64 bytes from fde4:2:0:77::7: icmp_seq=4 ttl=64 time=0.155 ms
+64 bytes from fde4:2:0:77::7: icmp_seq=5 ttl=64 time=0.113 ms
+
+--- fde4:2:0:77::7 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3997ms
+rtt min/avg/max/mdev = 0.068/0.122/0.155/0.032 ms
+try ping: fde4:2:0:37::3 :
+PING fde4:2:0:37::3(fde4:2:0:37::3) 56 data bytes
+64 bytes from fde4:2:0:37::3: icmp_seq=1 ttl=64 time=0.361 ms
+64 bytes from fde4:2:0:37::3: icmp_seq=2 ttl=64 time=0.164 ms
+64 bytes from fde4:2:0:37::3: icmp_seq=3 ttl=64 time=0.200 ms
+64 bytes from fde4:2:0:37::3: icmp_seq=4 ttl=64 time=0.160 ms
+64 bytes from fde4:2:0:37::3: icmp_seq=5 ttl=64 time=0.187 ms
+
+--- fde4:2:0:37::3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 0.160/0.214/0.361/0.075 ms
+try ping: fde4:2:0:78::8 :
+PING fde4:2:0:78::8(fde4:2:0:78::8) 56 data bytes
+64 bytes from fde4:2:0:78::8: icmp_seq=1 ttl=64 time=0.348 ms
+64 bytes from fde4:2:0:78::8: icmp_seq=2 ttl=64 time=0.304 ms
+64 bytes from fde4:2:0:78::8: icmp_seq=3 ttl=64 time=0.181 ms
+64 bytes from fde4:2:0:78::8: icmp_seq=4 ttl=64 time=0.225 ms
+64 bytes from fde4:2:0:78::8: icmp_seq=5 ttl=64 time=0.215 ms
+
+--- fde4:2:0:78::8 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 0.181/0.254/0.348/0.064 ms
+try ping: fde4:2:0:79::9 :
+PING fde4:2:0:79::9(fde4:2:0:79::9) 56 data bytes
+64 bytes from fde4:2:0:79::9: icmp_seq=1 ttl=64 time=0.357 ms
+64 bytes from fde4:2:0:79::9: icmp_seq=2 ttl=64 time=0.236 ms
+64 bytes from fde4:2:0:79::9: icmp_seq=3 ttl=64 time=0.153 ms
+64 bytes from fde4:2:0:79::9: icmp_seq=4 ttl=64 time=0.191 ms
+64 bytes from fde4:2:0:79::9: icmp_seq=5 ttl=64 time=0.205 ms
+
+--- fde4:2:0:79::9 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.153/0.228/0.357/0.070 ms
+try ping: fde4:2:0:7b::b :
+PING fde4:2:0:7b::b(fde4:2:0:7b::b) 56 data bytes
+64 bytes from fde4:2:0:7b::b: icmp_seq=1 ttl=64 time=0.342 ms
+64 bytes from fde4:2:0:7b::b: icmp_seq=2 ttl=64 time=0.176 ms
+64 bytes from fde4:2:0:7b::b: icmp_seq=3 ttl=64 time=0.197 ms
+64 bytes from fde4:2:0:7b::b: icmp_seq=4 ttl=64 time=0.175 ms
+64 bytes from fde4:2:0:7b::b: icmp_seq=5 ttl=64 time=0.246 ms
+
+--- fde4:2:0:7b::b ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3997ms
+rtt min/avg/max/mdev = 0.175/0.227/0.342/0.063 ms
+try ping: fde4:2:0:88::8 :
+PING fde4:2:0:88::8(fde4:2:0:88::8) 56 data bytes
+64 bytes from fde4:2:0:88::8: icmp_seq=1 ttl=64 time=0.051 ms
+64 bytes from fde4:2:0:88::8: icmp_seq=2 ttl=64 time=0.201 ms
+64 bytes from fde4:2:0:88::8: icmp_seq=3 ttl=64 time=0.143 ms
+64 bytes from fde4:2:0:88::8: icmp_seq=4 ttl=64 time=0.146 ms
+64 bytes from fde4:2:0:88::8: icmp_seq=5 ttl=64 time=0.173 ms
+
+--- fde4:2:0:88::8 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4012ms
+rtt min/avg/max/mdev = 0.051/0.142/0.201/0.052 ms
+try ping: fde4:2:0:68::6 :
+PING fde4:2:0:68::6(fde4:2:0:68::6) 56 data bytes
+64 bytes from fde4:2:0:68::6: icmp_seq=1 ttl=64 time=0.400 ms
+64 bytes from fde4:2:0:68::6: icmp_seq=2 ttl=64 time=0.185 ms
+64 bytes from fde4:2:0:68::6: icmp_seq=3 ttl=64 time=0.214 ms
+64 bytes from fde4:2:0:68::6: icmp_seq=4 ttl=64 time=0.197 ms
+64 bytes from fde4:2:0:68::6: icmp_seq=5 ttl=64 time=0.191 ms
+
+--- fde4:2:0:68::6 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3997ms
+rtt min/avg/max/mdev = 0.185/0.237/0.400/0.083 ms
+try ping: fde4:2:0:89::9 :
+PING fde4:2:0:89::9(fde4:2:0:89::9) 56 data bytes
+64 bytes from fde4:2:0:89::9: icmp_seq=1 ttl=64 time=0.367 ms
+64 bytes from fde4:2:0:89::9: icmp_seq=2 ttl=64 time=0.259 ms
+64 bytes from fde4:2:0:89::9: icmp_seq=3 ttl=64 time=0.247 ms
+64 bytes from fde4:2:0:89::9: icmp_seq=4 ttl=64 time=0.276 ms
+64 bytes from fde4:2:0:89::9: icmp_seq=5 ttl=64 time=0.219 ms
+
+--- fde4:2:0:89::9 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.219/0.273/0.367/0.053 ms
+try ping: fde4:2:0:aa::a :
+PING fde4:2:0:aa::a(fde4:2:0:aa::a) 56 data bytes
+64 bytes from fde4:2:0:aa::a: icmp_seq=1 ttl=64 time=0.108 ms
+64 bytes from fde4:2:0:aa::a: icmp_seq=2 ttl=64 time=0.181 ms
+64 bytes from fde4:2:0:aa::a: icmp_seq=3 ttl=64 time=0.143 ms
+64 bytes from fde4:2:0:aa::a: icmp_seq=4 ttl=64 time=0.226 ms
+64 bytes from fde4:2:0:aa::a: icmp_seq=5 ttl=64 time=0.159 ms
+
+--- fde4:2:0:aa::a ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 0.108/0.163/0.226/0.040 ms
+try ping: fde4:2:0:9a::9 :
+PING fde4:2:0:9a::9(fde4:2:0:9a::9) 56 data bytes
+64 bytes from fde4:2:0:9a::9: icmp_seq=1 ttl=64 time=0.567 ms
+64 bytes from fde4:2:0:9a::9: icmp_seq=2 ttl=64 time=0.285 ms
+64 bytes from fde4:2:0:9a::9: icmp_seq=3 ttl=64 time=0.201 ms
+64 bytes from fde4:2:0:9a::9: icmp_seq=4 ttl=64 time=0.196 ms
+64 bytes from fde4:2:0:9a::9: icmp_seq=5 ttl=64 time=0.219 ms
+
+--- fde4:2:0:9a::9 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 0.196/0.293/0.567/0.141 ms
+try ping: fde4:2:0:ab::b :
+PING fde4:2:0:ab::b(fde4:2:0:ab::b) 56 data bytes
+64 bytes from fde4:2:0:ab::b: icmp_seq=1 ttl=64 time=0.384 ms
+64 bytes from fde4:2:0:ab::b: icmp_seq=2 ttl=64 time=0.161 ms
+64 bytes from fde4:2:0:ab::b: icmp_seq=3 ttl=64 time=0.261 ms
+64 bytes from fde4:2:0:ab::b: icmp_seq=4 ttl=64 time=0.156 ms
+64 bytes from fde4:2:0:ab::b: icmp_seq=5 ttl=64 time=0.180 ms
+
+--- fde4:2:0:ab::b ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.156/0.228/0.384/0.087 ms
+try ping: fde4:2:0:ac::c :
+PING fde4:2:0:ac::c(fde4:2:0:ac::c) 56 data bytes
+64 bytes from fde4:2:0:ac::c: icmp_seq=1 ttl=64 time=0.372 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=2 ttl=64 time=0.187 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=3 ttl=64 time=0.198 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=4 ttl=64 time=0.204 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=5 ttl=64 time=0.200 ms
+
+--- fde4:2:0:ac::c ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 0.187/0.232/0.372/0.070 ms
+try ping: fde4:2:0:bb::b :
+PING fde4:2:0:bb::b(fde4:2:0:bb::b) 56 data bytes
+64 bytes from fde4:2:0:bb::b: icmp_seq=1 ttl=64 time=0.063 ms
+64 bytes from fde4:2:0:bb::b: icmp_seq=2 ttl=64 time=0.207 ms
+64 bytes from fde4:2:0:bb::b: icmp_seq=3 ttl=64 time=0.156 ms
+64 bytes from fde4:2:0:bb::b: icmp_seq=4 ttl=64 time=0.133 ms
+64 bytes from fde4:2:0:bb::b: icmp_seq=5 ttl=64 time=0.153 ms
+
+--- fde4:2:0:bb::b ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.063/0.142/0.207/0.047 ms
+try ping: fde4:2:0:9b::9 :
+PING fde4:2:0:9b::9(fde4:2:0:9b::9) 56 data bytes
+64 bytes from fde4:2:0:9b::9: icmp_seq=1 ttl=64 time=0.353 ms
+64 bytes from fde4:2:0:9b::9: icmp_seq=2 ttl=64 time=0.154 ms
+64 bytes from fde4:2:0:9b::9: icmp_seq=3 ttl=64 time=0.213 ms
+64 bytes from fde4:2:0:9b::9: icmp_seq=4 ttl=64 time=0.269 ms
+64 bytes from fde4:2:0:9b::9: icmp_seq=5 ttl=64 time=0.204 ms
+
+--- fde4:2:0:9b::9 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.154/0.238/0.353/0.069 ms
+try ping: fde4:2:0:bc::c :
+PING fde4:2:0:bc::c(fde4:2:0:bc::c) 56 data bytes
+64 bytes from fde4:2:0:bc::c: icmp_seq=1 ttl=64 time=0.388 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=2 ttl=64 time=0.298 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=3 ttl=64 time=0.172 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=4 ttl=64 time=0.263 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=5 ttl=64 time=0.279 ms
+
+--- fde4:2:0:bc::c ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.172/0.280/0.388/0.069 ms
+try ping: fde4:2:0:bc::c :
+PING fde4:2:0:bc::c(fde4:2:0:bc::c) 56 data bytes
+64 bytes from fde4:2:0:bc::c: icmp_seq=1 ttl=58 time=0.636 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=2 ttl=58 time=0.370 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=3 ttl=58 time=0.354 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=4 ttl=58 time=0.448 ms
+64 bytes from fde4:2:0:bc::c: icmp_seq=5 ttl=58 time=0.476 ms
+
+--- fde4:2:0:bc::c ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.354/0.456/0.636/0.104 ms
+try ping: fde4:2:0:ac::c :
+PING fde4:2:0:ac::c(fde4:2:0:ac::c) 56 data bytes
+64 bytes from fde4:2:0:ac::c: icmp_seq=1 ttl=58 time=0.613 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=2 ttl=58 time=0.360 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=3 ttl=58 time=0.469 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=4 ttl=58 time=0.408 ms
+64 bytes from fde4:2:0:ac::c: icmp_seq=5 ttl=58 time=0.448 ms
+
+--- fde4:2:0:ac::c ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 0.360/0.459/0.613/0.088 ms
+try ping: fde4:2:0:22::2 :
+PING fde4:2:0:22::2(fde4:2:0:22::2) 56 data bytes
+64 bytes from fde4:2:0:22::2: icmp_seq=1 ttl=64 time=0.135 ms
+64 bytes from fde4:2:0:22::2: icmp_seq=2 ttl=64 time=0.150 ms
+64 bytes from fde4:2:0:22::2: icmp_seq=3 ttl=64 time=0.134 ms
+64 bytes from fde4:2:0:22::2: icmp_seq=4 ttl=64 time=0.194 ms
+64 bytes from fde4:2:0:22::2: icmp_seq=5 ttl=64 time=0.121 ms
+
+--- fde4:2:0:22::2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3996ms
+rtt min/avg/max/mdev = 0.121/0.146/0.194/0.029 ms
+try ping: fde4:2:0:33::3 :
+PING fde4:2:0:33::3(fde4:2:0:33::3) 56 data bytes
+64 bytes from fde4:2:0:33::3: icmp_seq=1 ttl=64 time=0.127 ms
+64 bytes from fde4:2:0:33::3: icmp_seq=2 ttl=64 time=0.165 ms
+64 bytes from fde4:2:0:33::3: icmp_seq=3 ttl=64 time=0.150 ms
+64 bytes from fde4:2:0:33::3: icmp_seq=4 ttl=64 time=0.157 ms
+64 bytes from fde4:2:0:33::3: icmp_seq=5 ttl=64 time=0.158 ms
+
+--- fde4:2:0:33::3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+rtt min/avg/max/mdev = 0.127/0.151/0.165/0.017 ms
+try ping: fde4:2:0:66::6 :
+PING fde4:2:0:66::6(fde4:2:0:66::6) 56 data bytes
+64 bytes from fde4:2:0:66::6: icmp_seq=1 ttl=64 time=0.139 ms
+64 bytes from fde4:2:0:66::6: icmp_seq=2 ttl=64 time=0.149 ms
+64 bytes from fde4:2:0:66::6: icmp_seq=3 ttl=64 time=0.194 ms
+64 bytes from fde4:2:0:66::6: icmp_seq=4 ttl=64 time=0.187 ms
+64 bytes from fde4:2:0:66::6: icmp_seq=5 ttl=64 time=0.173 ms
+
+--- fde4:2:0:66::6 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+rtt min/avg/max/mdev = 0.139/0.168/0.194/0.024 ms
+try ping: fde4:2:0:99::9 :
+PING fde4:2:0:99::9(fde4:2:0:99::9) 56 data bytes
+64 bytes from fde4:2:0:99::9: icmp_seq=1 ttl=64 time=0.063 ms
+64 bytes from fde4:2:0:99::9: icmp_seq=2 ttl=64 time=0.155 ms
+64 bytes from fde4:2:0:99::9: icmp_seq=3 ttl=64 time=0.170 ms
+64 bytes from fde4:2:0:99::9: icmp_seq=4 ttl=64 time=0.203 ms
+64 bytes from fde4:2:0:99::9: icmp_seq=5 ttl=64 time=0.169 ms
+
+--- fde4:2:0:99::9 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 0.063/0.152/0.203/0.047 ms
+try ping: fde4:2:0:cc::c :
+PING fde4:2:0:cc::c(fde4:2:0:cc::c) 56 data bytes
+64 bytes from fde4:2:0:cc::c: icmp_seq=1 ttl=64 time=0.073 ms
+64 bytes from fde4:2:0:cc::c: icmp_seq=2 ttl=64 time=0.160 ms
+64 bytes from fde4:2:0:cc::c: icmp_seq=3 ttl=64 time=0.122 ms
+64 bytes from fde4:2:0:cc::c: icmp_seq=4 ttl=64 time=0.183 ms
+64 bytes from fde4:2:0:cc::c: icmp_seq=5 ttl=64 time=0.144 ms
+
+--- fde4:2:0:cc::c ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 3996ms
+rtt min/avg/max/mdev = 0.073/0.136/0.183/0.038 ms
