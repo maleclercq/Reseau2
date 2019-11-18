@@ -24,7 +24,7 @@ ip link set dev eb1 up
 ip -6 addr add fde4::2:cafe/64 dev eb1
 
 ip link set dev ebG6 up
-ip -6 addr add fde4::2:baba/64 dev ebG6
+ip -6 addr add fde4:2::2:baba/64 dev ebG6
 
 # The BELNET - BXL link, defaults to fd00:255:beb1::be/64
 #ip address add dev BELNET-eth0 "fde4:2:beb1::be/64"

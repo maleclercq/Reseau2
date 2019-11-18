@@ -1,28 +1,97 @@
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
 
-Hello, this is FRRouting (version 7.2-lingi2142-g2abea60).
+Hello, this is FRRouting (version 7.2-lingi2142).
 Copyright 1996-2005 Kunihiro Ishiguro, et al.
 
-This is a git build of 2abea60
-Associated branch(es):
-	local:stable/7.2
-	github/FRRouting/frr.git/stable/7.2
+group2# show bgp summary
+
+IPv6 Unicast Summary:
+BGP router identifier 0.0.0.1, local AS number 65002 vrf-id 0
+BGP table version 14
+RIB entries 12, using 2208 bytes of memory
+Peers 8, using 163 KiB of memory
+
+Neighbor        V         AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
+fde4:2::1:acdc  4      65001       0       0        0    0    0    never      Connect
+fde4:2:0:22::2  4      65002       9      21        0    0    0 00:05:50            1
+fde4:2:0:33::3  4      65002      19       9        0    0    0 00:05:55            7
+fde4:2:0:55::5  4      65002       9       9        0    0    0 00:05:50            1
+fde4:2:0:66::6  4      65002      15       9        0    0    0 00:05:48            7
+fde4:2:0:88::8  4      65002       9       9        0    0    0 00:05:50            1
+fde4:2:0:bb::b  4      65002      10       9        0    0    0 00:05:55            2
+fde4:2:0:dd::d  4      65002       9      22        0    0    0 00:05:55            1
+
+Total number of neighbors 8
+group2# exit
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
+
+Hello, this is FRRouting (version 7.2-lingi2142).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+group2# show bgp summary
+
+IPv6 Unicast Summary:
+BGP router identifier 0.0.0.3, local AS number 65002 vrf-id 0
+BGP table version 11
+RIB entries 12, using 2208 bytes of memory
+Peers 6, using 123 KiB of memory
+
+Neighbor        V         AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
+fde4:2:0:11::1  4      65002       9      19        0    0    0 00:05:55            1
+fde4:2:0:55::5  4      65002       9      18        0    0    0 00:05:50            1
+fde4:2:0:66::6  4      65002      16      16        0    0    0 00:05:50            6
+fde4:2:0:99::9  4      65002      10      16        0    0    0 00:05:55            1
+fde4:2:0:bb::b  4      65002      10      19        0    0    0 00:05:55            2
+fde4:3::bbbb    4      65003      32      29        0    0    0 00:06:05            6
+
+Total number of neighbors 6
+group2# exit
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
+
+Hello, this is FRRouting (version 7.2-lingi2142).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+group2# show bgp summary
+
+IPv6 Unicast Summary:
+BGP router identifier 0.0.0.11, local AS number 65002 vrf-id 0
+BGP table version 10
+RIB entries 12, using 2208 bytes of memory
+Peers 8, using 163 KiB of memory
+
+Neighbor        V         AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
+fde4:2:0:11::1  4      65002       9      10        0    0    0 00:05:55            1
+fde4:2:0:33::3  4      65002      19      10        0    0    0 00:05:55            6
+fde4:2:0:55::5  4      65002       9      10        0    0    0 00:05:50            1
+fde4:2:0:88::8  4      65002       9      10        0    0    0 00:05:50            1
+fde4:2:0:99::9  4      65002      18      10        0    0    0 00:05:55            6
+fde4:2:0:aa::a  4      65002       9      18        0    0    0 00:05:55            1
+fde4:2:0:cc::c  4      65002       9      18        0    0    0 00:05:50            1
+fde4:4::4:dead  4      65004      19      19        0    0    0 00:06:40            1
+
+Total number of neighbors 8
+group2# exit
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.
+
+Hello, this is FRRouting (version 7.2-lingi2142).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
 
 group2# show bgp summary
 
 IPv6 Unicast Summary:
 BGP router identifier 0.0.0.6, local AS number 65002 vrf-id 0
-BGP table version 10
-RIB entries 15, using 2760 bytes of memory
+BGP table version 8
+RIB entries 12, using 2208 bytes of memory
 Peers 7, using 143 KiB of memory
 
 Neighbor        V         AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
-fde4::1         4      64512      15      16        0    0    0 00:03:15            8
-fde4::6:caca    4      65006       0       0        0    0    0    never      Connect
-fde4:2:0:11::1  4      65002      15      14        0    0    0 00:02:41            4
-fde4:2:0:33::3  4      65002       0       0        0    0    0    never       Active
-fde4:2:0:55::5  4      65002       6      15        0    0    0 00:02:47            1
-fde4:2:0:88::8  4      65002       6      15        0    0    0 00:02:47            1
-fde4:2:0:99::9  4      65002       6      14        0    0    0 00:02:41            1
+fde4::1         4      64512      19      19        0    0    0 00:06:47            6
+fde4:2::6:caca  4      65006       0       0        0    0    0    never      Connect
+fde4:2:0:11::1  4      65002       9      15        0    0    0 00:05:48            1
+fde4:2:0:33::3  4      65002      16      16        0    0    0 00:05:50            3
+fde4:2:0:55::5  4      65002       9      16        0    0    0 00:05:55            1
+fde4:2:0:88::8  4      65002       9      16        0    0    0 00:05:55            1
+fde4:2:0:99::9  4      65002      10      16        0    0    0 00:05:49            1
 
 Total number of neighbors 7
 group2# exit

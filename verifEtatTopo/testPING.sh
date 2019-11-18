@@ -1,11 +1,39 @@
 #!/bin/bash
 
-sudo rm resultPING
+i=0
+n=15
+
+chargement(){
+    ((i++))
+    str=" Ping are testing: ["
+
+    START=1
+    END=$i
+    for (( c=$START; c<=$END; c++ ))
+    do
+        str=$str"#"
+    done
+
+    z=$i+1
+    for (( c=$z; c<=$n; c++ ))
+    do
+        str=$str" "
+    done
+
+    str=$str"]"
+    tempo=$(expr $i \* 100)
+    pourcent=$(expr $tempo / $n)
+    str="$str$pourcent%\r"
+
+    >&2 echo -ne "$str"
+}
+
+
+
 cd ..
 
-sudo ./cleanup.sh > /dev/null 2>&1 
+chargement
 
-sudo ./create_network.sh myNetwork > /dev/null 2>&1
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R13 << EOF
 echo "try ping: fde4:2:0:dd::d :" >> verifEtatTopo/resultPING
@@ -17,6 +45,9 @@ ping6 fde4:2:0:2d::2 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
+
 sudo ./connect_to.sh ./myNetwork_cfg/ R1 << EOF
 echo "try ping: fde4:2:0:11::1 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:11::1 -c 5 >> verifEtatTopo/resultPING
@@ -26,6 +57,9 @@ echo "try ping: fde4:2:0:13::3 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:13::3 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
+
+chargement
+
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R4 << EOF
 echo "try ping: fde4:2:0:44::4 :" >> verifEtatTopo/resultPING
@@ -41,6 +75,9 @@ ping6 fde4:2:0:34::3 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
+
 sudo ./connect_to.sh ./myNetwork_cfg/ R5 << EOF
 echo "try ping: fde4:2:0:55::5 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:55::5 -c 5 >> verifEtatTopo/resultPING
@@ -54,6 +91,8 @@ echo "try ping: fde4:2:0:57::7 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:57::7 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
+
+chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R7 << EOF
@@ -70,6 +109,8 @@ ping6 fde4:2:0:7b::b -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R8 << EOF
 echo "try ping: fde4:2:0:88::8 :" >> verifEtatTopo/resultPING
@@ -80,6 +121,8 @@ echo "try ping: fde4:2:0:89::9 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:89::9 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
+
+chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R10 << EOF
@@ -94,6 +137,8 @@ ping6 fde4:2:0:ac::c -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R11 << EOF
 echo "try ping: fde4:2:0:bb::b :" >> verifEtatTopo/resultPING
@@ -105,6 +150,8 @@ ping6 fde4:2:0:bc::c -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R13 << EOF
 echo "try ping: fde4:2:0:bc::c :" >> verifEtatTopo/resultPING
@@ -114,6 +161,8 @@ ping6 fde4:2:0:ac::c -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
 #test reste loopback
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R2 << EOF
@@ -122,11 +171,17 @@ ping6 fde4:2:0:22::2 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
+
 sudo ./connect_to.sh ./myNetwork_cfg/ R3 << EOF
 echo "try ping: fde4:2:0:33::3 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:33::3 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
+
+chargement
+
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R6 << EOF
 echo "try ping: fde4:2:0:66::6 :" >> verifEtatTopo/resultPING
@@ -134,17 +189,26 @@ ping6 fde4:2:0:66::6 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
+
 sudo ./connect_to.sh ./myNetwork_cfg/ R9 << EOF
 echo "try ping: fde4:2:0:99::9 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:99::9 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
+chargement
+
+
 sudo ./connect_to.sh ./myNetwork_cfg/ R12 << EOF
 echo "try ping: fde4:2:0:cc::c :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:cc::c -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
+
+chargement
+>&2 echo -ne " \n\r"
 
 cd verifEtatTopo
 

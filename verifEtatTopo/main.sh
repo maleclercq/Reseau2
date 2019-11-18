@@ -22,11 +22,16 @@ chargement(){
     echo -ne "$str"
 }
 
+#sudo ./cleanup.sh > /dev/null 2>&1
 
-sudo ./testPING.sh >> resultPING
-python readFile.py
-
-sudo ./testTraceRoute.sh >> resultTraceRoute
+#sudo ./create_network.sh myNetwork > /dev/null 2>&1
 
 
-sudo ./testBGP.sh >> resultBGP
+sudo ./testPING.sh > resultPING
+python readPING.py
+
+sudo ./testTraceRoute.sh > resultTraceRoute
+python readTraceRoute.py
+
+sudo ./testBGP.sh &> resultBGP
+python readBGP.py
