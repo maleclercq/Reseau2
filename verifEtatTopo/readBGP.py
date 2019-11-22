@@ -38,6 +38,6 @@ if __name__ == "__main__":
 
         i = 0
         for val in arrayValues:
-            if(not val.isdigit()): print("Error: " + val + " on " + arrayAddr[i])
+            if(not val.isdigit()): print("Error on BGP: "+ arrayAddr[i] + " is '" + val + "' but should be a number on bgp summary")
             i += 1
 

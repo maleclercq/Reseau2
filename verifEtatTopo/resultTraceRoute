@@ -1,9 +1,9 @@
 traceroute to fde4:2:0:bc::c (fde4:2:0:bc::c), 30 hops max, 80 byte packets
- 1  fde4:2:0:1d::1 (fde4:2:0:1d::1)  0.085 ms  0.018 ms  0.014 ms
- 2  fde4:2:0:13::3 (fde4:2:0:13::3)  0.057 ms  0.020 ms  0.019 ms
- 3  fde4:2:0:37::7 (fde4:2:0:37::7)  0.050 ms  0.038 ms  0.047 ms
- 4  fde4:2:0:7b::b (fde4:2:0:7b::b)  0.059 ms  0.030 ms  0.028 ms
- 5  fde4:2:0:bc::c (fde4:2:0:bc::c)  0.057 ms  0.031 ms  0.029 ms
+ 1  fde4:2:0:1d::1 (fde4:2:0:1d::1)  0.077 ms  0.015 ms  0.014 ms
+ 2  fde4:2:0:13::3 (fde4:2:0:13::3)  0.048 ms  0.022 ms  0.020 ms
+ 3  fde4:2:0:37::7 (fde4:2:0:37::7)  0.052 ms  0.023 ms  0.046 ms
+ 4  fde4:2:0:7b::b (fde4:2:0:7b::b)  0.072 ms  0.031 ms  0.028 ms
+ 5  fde4:2:0:bc::c (fde4:2:0:bc::c)  0.045 ms  0.027 ms  0.027 ms
 traceroute to fde4:2:0:57::7 (fde4:2:0:57::7), 30 hops max, 80 byte packets
- 1  fde4:2:0:45::5 (fde4:2:0:45::5)  0.079 ms  0.012 ms  0.012 ms
- 2  fde4:2:0:57::7 (fde4:2:0:57::7)  0.031 ms  0.013 ms  0.027 ms
+ 1  fde4:2:0:45::5 (fde4:2:0:45::5)  0.069 ms  0.012 ms  0.012 ms
+ 2  fde4:2:0:57::7 (fde4:2:0:57::7)  0.033 ms  0.013 ms  0.012 ms

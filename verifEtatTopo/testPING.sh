@@ -1,11 +1,11 @@
 #!/bin/bash
 
 i=0
-n=15
+n=28
 
 chargement(){
     ((i++))
-    str=" Ping are testing: ["
+    str="Ping are testing: ["
 
     START=1
     END=$i
@@ -166,7 +166,7 @@ chargement
 #test reste loopback
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R2 << EOF
-echo "try ping: fde4:2:0:22::2 :" >> verifEtatTopo/resultPING
+echo "try ping on loopback: fde4:2:0:22::2 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:22::2 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
@@ -175,7 +175,7 @@ chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R3 << EOF
-echo "try ping: fde4:2:0:33::3 :" >> verifEtatTopo/resultPING
+echo "try ping on loopback: fde4:2:0:33::3 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:33::3 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
@@ -184,7 +184,7 @@ chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R6 << EOF
-echo "try ping: fde4:2:0:66::6 :" >> verifEtatTopo/resultPING
+echo "try ping on loopback: fde4:2:0:66::6 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:66::6 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
@@ -193,7 +193,7 @@ chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R9 << EOF
-echo "try ping: fde4:2:0:99::9 :" >> verifEtatTopo/resultPING
+echo "try ping on loopback: fde4:2:0:99::9 :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:99::9 -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
@@ -202,13 +202,48 @@ chargement
 
 
 sudo ./connect_to.sh ./myNetwork_cfg/ R12 << EOF
-echo "try ping: fde4:2:0:cc::c :" >> verifEtatTopo/resultPING
+echo "try ping on loopback: fde4:2:0:cc::c :" >> verifEtatTopo/resultPING
 ping6 fde4:2:0:cc::c -c 5 >> verifEtatTopo/resultPING
 exit
 EOF
 
 chargement
->&2 echo -ne " \n\r"
+
+
+
+#test de BGP
+
+
+for r in `seq 1 9`;
+do
+sudo ./connect_to.sh ./myNetwork_cfg/ R$r << EOF
+echo "try ping OSPF from R$r to: fde4:2:0:ac::c :" >> verifEtatTopo/yoloSH
+ping6 fde4:2:0:ac::c -c 5 >> verifEtatTopo/yoloSH
+exit
+EOF
+chargement
+done
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R13 << EOF
+echo "try ping OSPF from R$r to: fde4:2:0:ac::c :" >> verifEtatTopo/yoloSH
+ping6 fde4:2:0:ac::c -c 5 >> verifEtatTopo/yoloSH
+exit
+EOF
+
+chargement
+
+for r in `seq 10 12`;
+do
+sudo ./connect_to.sh ./myNetwork_cfg/ R$r << EOF
+echo "try ping OSPF from R$r to:: fde4:2:0:1d::d :" >> verifEtatTopo/yoloSH
+ping6 fde4:2:0:1d::d -c 5 >> verifEtatTopo/yoloSH
+exit
+EOF
+chargement
+done
+
+
+>&2 echo -ne "\n"
 
 cd verifEtatTopo
 
