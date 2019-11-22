@@ -27,8 +27,8 @@ chargement(){
 #sudo ./create_network.sh myNetwork > /dev/null 2>&1
 
 
-sudo ./testPING.sh > resultPING
-python readPING.py
+#sudo ./testPING.sh > resultPING
+#python readPING.py
 
 sudo ./testTraceRoute.sh > resultTraceRoute
 python readTraceRoute.py
