@@ -1,7 +1,7 @@
 #!/bin/bash
 
 i=0
-n=28
+n=10
 
 chargement(){
     ((i++))
@@ -212,6 +212,11 @@ chargement
 
 
 #test de BGP
+
+sudo ./connect_to.sh ./myNetwork_cfg/ R3 << EOF
+ip link set dev eth0 down
+exit
+EOF
 
 
 for r in `seq 1 9`;

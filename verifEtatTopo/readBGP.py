@@ -38,6 +38,7 @@ if __name__ == "__main__":
 
         i = 0
         for val in arrayValues:
-            if(not val.isdigit()): print("Error on BGP: "+ arrayAddr[i] + " is '" + val + "' but should be a number on bgp summary")
+            if(not val.isdigit() and not val=="Connect"): print("Error on BGP: " + arrayAddr[i] + " is '" + val + "' but should be a number on bgp summary")
+            if(val=="Connect"): print("Maybe an error on: " + arrayAddr[i] + " is " + val + " but we don't have answer, maybe he is not launch?" )
             i += 1
 
