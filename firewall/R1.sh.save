@@ -1,0 +1,9 @@
+#These commands permit to erase (flush) every rules that might exist
+ip6tables -F FORWARD
+ip6tables -F INPUT
+ip6tables -F OUTPUT
+
+#These are the default rules (Exery packet not known by the rules will be droped)
+ip6tables -P FORWARD DROP
+ip6tables -P INPUT DROP
+ip6tables -P OUTPUT DROP
