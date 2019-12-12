@@ -1,7 +1,0 @@
-!
-hostname bgpd
-password zebra
-!
-router bgp 65002
- bgp router-id 0.0.0.3
- 4no bgp default ipv4-unicast

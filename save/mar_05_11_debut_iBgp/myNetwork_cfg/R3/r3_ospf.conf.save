@@ -1,7 +1,0 @@
-interface R4-eth2
-    ipv6 ospf6 cost 5
-    ipv6 ospf6 hello-interval 40
-    ipv6 ospf6 dead-interval 40
-    ipv6 ospf6 instance-id 0
-!
- 
