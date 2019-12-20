@@ -1,21 +1,10 @@
 #!/bin/bash
 
-# Create a virtual network using network namespaces and veth pairs
-# to connect them.
-# Assuming $CONFIGDIR == "cfg":
-# * Files in cfg/<Node name> will be overlaid over /etc, i.e. if a file with
-# the same name exists in both directory, the one in cfg/<Node name> will
-# be the one used.
-# * If cfg/<Node name>_$BOOT (defaults to cfg/<Node name>_boot) exists and
-# is executable, it will be executed when the node is created
-# * If cfg/<Node name>_$STARTUP (defaults to cfg/<Node name>_start) exists and
-# is executable, it will be executed when the whole network has started
-#
+# Create our virtual network
 
 # IMPORTANT NOTE: Node names MUST NOT exceed 9 characters.
 # This is due to the limitation to 14 characters of interface names
 
-# You can override any of these settings on a per-topology basis
 # Group number
 GROUPNUMBER=2
 # Node configs
@@ -26,13 +15,11 @@ BOOT="boot"
 STARTUP="start"
 PREFIXBASE="fde4:2"
 PREFIXLEN=32
-# You can reuse the above two to generate ip addresses/routes, ...
-# e.g. "fde4:2:1234::/48"
 
 # This function describes the network topology that we want to emulate
 function mk_topo {
     echo "@@ Adding links and nodes"
-    # Build a small network R0 - R1 - R2
+    # Build the network
     # Nodes are creadted on the fly, and their interface are assigned as
     # <node name>-eth<count>, where count starts at 0 and is increased by 1
     # after each new interface
